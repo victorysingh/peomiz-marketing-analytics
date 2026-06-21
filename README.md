@@ -1,91 +1,225 @@
-# Marketing Analytics & Growth Intelligence Framework for Peomiz
+# GEO/AIO Search Analytics Engine
 
-## Project Overview
+## Overview
 
-This project aims to build a data-driven analytics and reporting framework for Peomiz to monitor customer acquisition, user behavior, marketing performance, and booking conversions.
+The GEO/AIO Search Analytics Engine is a platform designed to measure and analyze brand visibility across AI-powered search and recommendation systems such as ChatGPT, Gemini, and Claude.
 
-The goal is to help the organization make informed business decisions by identifying customer journey bottlenecks, measuring campaign effectiveness, and tracking key business KPIs.
+As AI-driven discovery becomes increasingly important, businesses need new analytics frameworks to understand how often they are recommended, how they compare against competitors, and how their visibility changes over time.
+
+This project helps organizations track AI-generated brand mentions, benchmark competitors, calculate visibility scores, and generate actionable Generative Engine Optimization (GEO) insights.
 
 ---
 
 ## Problem Statement
 
-Currently, there is no centralized framework to:
+Traditional SEO tools focus on search engines like Google and Bing but do not provide visibility into Large Language Models (LLMs).
 
-- Track the complete customer journey
-- Identify booking funnel drop-offs
-- Measure SEO performance
-- Monitor marketing effectiveness
-- Generate business intelligence reports
+Organizations currently lack the ability to:
 
-This limits data-driven decision-making and growth optimization.
-
----
-
-## Project Objectives
-
-- Improve booking conversion rates
-- Analyze customer behavior
-- Monitor SEO and marketing performance
-- Identify funnel drop-offs
-- Generate actionable business insights
+* Track AI-generated brand mentions
+* Compare visibility against competitors
+* Monitor recommendation frequency
+* Measure AI discovery performance
+* Generate GEO optimization insights
 
 ---
 
-## Proposed Features
+## Objectives
 
-### KPI Dashboard
-- Total Users
-- Sessions
-- Traffic Sources
-- Bookings
-- Conversion Rate
-- Repeat Customers
-
-### Funnel Analytics
-Homepage Visit
-→ Signup
-→ OTP Verification
-→ Service Selection
-→ Add to Cart
-→ Address Selection
-→ Checkout
-→ Payment
-→ Booking Confirmation
-
-### SEO Reporting
-- Organic Traffic
-- Landing Pages
-- Keyword Performance
-- CTR Analysis
-
-### Marketing Reporting
-- Campaign Performance
-- Lead Generation
-- Social Media Analytics
-- Channel Attribution
+* Measure brand visibility across AI platforms
+* Benchmark competitors
+* Track recommendation frequency
+* Analyze mention positions
+* Generate visibility scores
+* Provide GEO-focused recommendations
 
 ---
 
-## Expected Deliverables
+## Core Features
 
-- KPI Dashboard Framework
-- Funnel Analysis Reports
-- SEO Reports
-- Marketing Performance Reports
-- Monthly Growth Summary
+### Prompt Management System
 
----
+Organize and manage prompts by category:
 
-## Technology Stack (Proposed)
+* Service-Based Prompts
+* Hyperlocal Prompts
+* Competitive Prompts
 
-- Google Analytics 4 (GA4)
-- Google Tag Manager (GTM)
-- Google Search Console (GSC)
-- Looker Studio / Power BI
-- SQL
-- Python
+Stored fields include:
+
+* Prompt ID
+* Category
+* Service Type
+* Location
 
 ---
 
-## Repository Structure
+### Automated LLM Query Pipeline
+
+Supported Models:
+
+* ChatGPT
+* Google Gemini
+* Anthropic Claude
+
+Functions:
+
+* Prompt execution
+* Response collection
+* Execution logging
+* Retry handling
+* API monitoring
+
+---
+
+### Mention Detection Engine
+
+Detect:
+
+* Peomiz mentions
+* Competitor mentions
+
+Output:
+
+* Mention Status
+* Competitor Presence
+* Recommendation Position
+
+---
+
+### Sentiment Analysis
+
+MVP uses a lightweight rule-based sentiment model.
+
+Categories:
+
+* Positive
+* Neutral
+* Negative
+
+---
+
+### Visibility Scoring System
+
+Visibility Score is calculated using:
+
+Visibility Score =
+Mention Weight × Position Weight × Sentiment Weight
+
+Factors:
+
+* Mention occurrence
+* Ranking position
+* Sentiment polarity
+
+---
+
+### Analytics Dashboard
+
+Provides:
+
+* Mention Rate
+* Visibility Score
+* Competitor Benchmarking
+* Daily Trends
+* Weekly Trends
+* GEO Insights
+
+---
+
+## Technical Architecture
+
+Prompt Management
+↓
+LLM Query Pipeline
+↓
+Response Collection
+↓
+Mention Detection
+↓
+Visibility Scoring
+↓
+Analytics Dashboard
+
+---
+
+## Technology Stack
+
+### Backend
+
+* Python
+* FastAPI
+
+### Database
+
+* PostgreSQL
+
+### Processing
+
+* Pandas
+* Regex
+* NLP Utilities
+
+### Dashboard
+
+* Streamlit
+
+### AI Integrations
+
+* OpenAI API
+* Google Gemini API
+* Anthropic Claude API
+
+---
+
+## Project Structure
+
+```text
+geo-aio-search-analytics/
+│
+├── prompts/
+├── pipeline/
+├── mention_detection/
+├── scoring/
+├── database/
+├── dashboard/
+├── reports/
+├── docs/
+└── README.md
+```
+
+## Success Metrics
+
+### Business Metrics
+
+* Daily AI visibility tracking
+* Competitor benchmarking
+* Historical reporting
+* GEO recommendations
+
+### Operational Metrics
+
+* 90%+ successful pipeline execution
+* 95%+ response collection rate
+* Automated visibility monitoring
+
+---
+
+## Future Enhancements
+
+* Advanced NLP analysis
+* ML-based sentiment analysis
+* Additional LLM integrations
+* Real-time monitoring
+* Enterprise dashboard
+* Multi-brand support
+
+---
+
+## Author
+
+**Jaipreet Singh**
+
+Project: Programmatic SEO & Micro-Market Analytics
+
+Internship Project – GEO/AIO Search Analytics Engine
